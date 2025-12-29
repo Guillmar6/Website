@@ -32,7 +32,7 @@ body {
     box-shadow: 10px 10px;
     z-index: 2;
 
-    animation: loaded 6s ease-in-out;
+    animation: loaded 5s ease-in-out;
 }
 @keyframes loaded {
     0% {
@@ -55,20 +55,24 @@ body {
     height: 25px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: grey;
 }
 .layout label {
     position: absolute;
-    transform: translateX(-140%);
+    left: 4rem;
     background-color: white;
     pointer-events: none;
     border-radius: 5px;
+    background-color: grey;
 
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, left 0.2s ease;
 }
 .layout input:focus+label, .layout input:valid+label {
-    transform: translateY(-70%) translateX(-150%) scale(0.75);
+    transform: translateY(-70%) scale(0.75);
+    left: 3rem;
 }
 .layout .btn {
+    background-color: grey;
     margin: 10px;
     padding: 5px;
     border: 1px solid;
@@ -156,7 +160,8 @@ body {
     right: 0;
     color: white;
     border-radius: 20px;
-    border: 2px solid rgba(0, 64, 142, 0.828);
+    border: 2px solid blue;
+    overflow: hidden;
     z-index: 3;
 }
 .open-btn label {
@@ -166,6 +171,8 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-color: grey;
+    font-size: 1rem;
 }
 #overlay {
     position: absolute;
