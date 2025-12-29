@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/pics/dog.jpg");
+    background-image: url("../pics/dog.jpg");
     background-size: cover;
 }
 .background-blur {
