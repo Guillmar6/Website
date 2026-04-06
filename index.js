@@ -1,7 +1,6 @@
 const { createServer } = require('node:http');
 const fs = require('fs');
 
-const HOST = '127.0.0.36';
 const PORT = 3000;
 
 const server = createServer((req, res) => {
@@ -12,4 +11,4 @@ const server = createServer((req, res) => {
     }
 });
 
-server.listen(PORT, HOST, () => console.log(`Server running on: http://${HOST}:${PORT}`));
+server.listen(PORT, () => console.log(`Server running on:`));
